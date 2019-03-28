@@ -22,6 +22,7 @@ public class Book {
     private String thirdImage;
     private String forthImage;
     private String fifthImage;
+    private String bigImage;
 
     public int getBookID() {
         return bookID;
@@ -133,6 +134,14 @@ public class Book {
 
     public void setFifthImage(String fifthImage) {
         this.fifthImage = fifthImage;
+    }
+
+    public String getBigImage() {
+        return bigImage;
+    }
+
+    public void setBigImage(String bigImage) {
+        this.bigImage = bigImage;
     }
 
     @Override

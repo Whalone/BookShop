@@ -39,7 +39,7 @@ public class BookDaoTest {
     @Test
     public void testFindBookByCategory() throws Exception{
         Category category = new Category();
-        category.setParentID(10);
+        //category.setParentID(10);
         System.out.println(category.getCategoryID());
         List<Book> books = bookDao.findBookByCategory(category);
         System.out.println(books.toString());
@@ -55,7 +55,7 @@ public class BookDaoTest {
         Book book = bookDao.findBookById(1);
         book.getBookName();
         book.setBookName("杀戮都市");
-        book.setModifyBy("Kim");
+        //book.setModifyBy("Kim");
         bookDao.updateBook(book);
     }
 
@@ -70,7 +70,7 @@ public class BookDaoTest {
         List<Book> books = bookDao.selectPopularBook(category);
         System.out.println(books);
         books.clear();
-        category.setParentID(20);
+        //category.setParentID(20);
         books = bookDao.selectPopularBook(category);
         System.out.println(books);
     }
@@ -81,7 +81,7 @@ public class BookDaoTest {
         List<Book> books = bookDao.selectNewBook(category);
         System.out.println(books);
         books.clear();
-        category.setParentID(20);
+        category.setCategoryID(11);
         books = bookDao.selectNewBook(category);
         System.out.println(books);
     }
