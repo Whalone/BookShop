@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fangxiaofeng.dao.BookDao">
+
+    <select id="findBookByName" parameterType="String" resultType="com.fangxiaofeng.model.Book">
+        SELECT *
+        FROM book
+        <where>
+            1=1
+            <if test="bookName!= null">
+                AND BookName LIKE '%${bookName}%'
+            </if>
+        </where>
+    </select>
+
+    <select id="findBookById" parameterType="int" resultType="com.fangxiaofeng.model.Book">
+        SELECT *
+        FROM book
+        WHERE bookID = #{bookId}
+    </select>
+
+    <select id="findBookByCategory" parameterType="com.fangxiaofeng.model.Category" resultType="com.fangxiaofeng.model.Book">
+        SELECT *
+        FROM book
+        <where>
+            flag = 0
+            <if test="categoryID = parentID">
+                and categoryID = #{parentID}
+            </if>
+            <if test="categoryID != 0">
+                and categoryID = #{parentID} and childCategoryID = #{categoryID}
+            </if>
+        </where>
+    </select>
+
+    <update id="updateBook" parameterType="com.fangxiaofeng.model.Book" >
+        UPDATE book
+        SET
+          bookName = #{bookName},
+          bookPrice = #{bookPrice},
+          bookAuthor = #{bookAuthor},
+          publishTime = #{publishTime},
+          weight = #{weight},
+          photo = #{photo},
+          createBy = #{createBy},
+          createTime = #{createTime},
+          modifyBy = #{modifyBy},
+          modifyTime = #{modifyTime},
+          flag = #{flag}
+        WHERE
+          bookID = #{bookID}
+    </update>
+
+    <delete id="deleteBookByID" parameterType="int">
+        DELETE
+          FROM book
+          WHERE bookID = #{bookID}
+    </delete>
+
+    <select id="selectPopularBook" parameterType="com.fangxiaofeng.model.Category" resultType="com.fangxiaofeng.model.Book">
+        SELECT
+          *
+        FROM
+          book
+        <where>
+            flag = 0
+            <if test="parentID != 0">
+                and categoryID = #{parentID}
+            </if>
+        </where>
+        ORDER BY weight DESC
+    </select>
+
+    <select id="selectNewBook" parameterType="com.fangxiaofeng.model.Category" resultType="com.fangxiaofeng.model.Book">
+        SELECT
+          *
+        FROM
+          book
+        <where>
+            flag = 0
+            <if test="categoryID != 0">
+                and categoryID = #{parentID}
+            </if>
+        </where>
+        ORDER BY createTime DESC
+    </select>
+</mapper>
