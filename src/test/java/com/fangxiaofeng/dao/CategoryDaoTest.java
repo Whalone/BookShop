@@ -31,5 +31,12 @@ public class CategoryDaoTest {
         Category category = categoryDao.findCateByID(11);
         System.out.println(category);
     }
+
+    @Test
+    public void testFindCateByName() throws Exception{
+        String categoryName = "cook";
+        Category category = categoryDao.findCateByName(categoryName);
+        System.out.println(category);
+    }
 }
 

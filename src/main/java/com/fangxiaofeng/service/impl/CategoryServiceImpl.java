@@ -27,5 +27,10 @@ public class CategoryServiceImpl implements CategoryService {
     public Category findCateByID(int categoryID) throws Exception {
         return categoryDao.findCateByID(categoryID);
     }
+
+    @Override
+    public  Category findCateByName(String categoryName) throws Exception{
+        return categoryDao.findCateByName(categoryName);
+    }
 }
 

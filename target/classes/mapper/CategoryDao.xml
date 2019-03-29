@@ -9,8 +9,7 @@
           *
         FROM
           category
-        WHERE
-          flag = 0
+        ORDER BY categoryID ASC
     </select>
 
     <select id="findCateByID" parameterType="INT" resultType="com.fangxiaofeng.model.Category">
@@ -19,9 +18,16 @@
         FROM
           category
         WHERE
-          flag = 0
-          AND
             categoryID = #{categoryID}
+    </select>
+
+    <select id="findCateByName" parameterType="STRING" resultType="com.fangxiaofeng.model.Category">
+        SELECT
+          *
+        FROM
+          category
+        WHERE
+          categoryName LIKE #{categoryName}
     </select>
 
 </mapper>

@@ -24,7 +24,10 @@
     <select id="findBookByCategory" parameterType="com.fangxiaofeng.model.Category" resultType="com.fangxiaofeng.model.Book">
         SELECT *
         FROM book
-        WHERE categoryID = #{categoryID}
+        <if test="categoryID != 0">
+            WHERE categoryID = #{categoryID}
+        </if>
+
     </select>
 
     <update id="updateBook" parameterType="com.fangxiaofeng.model.Book" >

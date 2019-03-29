@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="BookShop:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f434ef21-5ae5-4357-becc-9830e037b788" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangxiaofeng/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangxiaofeng/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangxiaofeng/dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangxiaofeng/dao/CategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangxiaofeng/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangxiaofeng/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangxiaofeng/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangxiaofeng/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/BookDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/BookDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/CategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CategoryDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/books/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/books/1_1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/books/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/books/1_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/images/product/big-img/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/images/product/big-img/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/fangxiaofeng/dao/CategoryDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/fangxiaofeng/dao/CategoryDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ChatRobot/WEB-INF/classes/com/fangxiaofeng/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/ChatRobot/WEB-INF/classes/com/fangxiaofeng/controller/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ChatRobot/WEB-INF/classes/mapper/CategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/ChatRobot/WEB-INF/classes/mapper/CategoryDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ChatRobot/images/books/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ChatRobot/images/books/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ChatRobot/images/product/big-img/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/ChatRobot/images/product/big-img/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ChatRobot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/ChatRobot/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangxiaofeng/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangxiaofeng/controller/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CategoryDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CategoryDao.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,95 +59,72 @@
     <session id="-465455">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="1" />
-          <entry key="java" value="7" />
+          <entry key="class" value="2" />
+          <entry key="css" value="1" />
+          <entry key="html" value="2" />
+          <entry key="ico" value="1" />
+          <entry key="java" value="22" />
+          <entry key="jpg" value="8" />
+          <entry key="js" value="3" />
+          <entry key="png" value="3" />
           <entry key="properties" value="1" />
-          <entry key="xml" value="1" />
+          <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="1" />
-          <entry key="JAVA" value="7" />
+          <entry key="CLASS" value="2" />
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="2" />
+          <entry key="Image" value="12" />
+          <entry key="JAVA" value="22" />
+          <entry key="JavaScript" value="3" />
           <entry key="Properties" value="1" />
-          <entry key="XML" value="1" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="49" />
+          <entry key="html" value="136" />
+          <entry key="java" value="852" />
+          <entry key="js" value="1630" />
           <entry key="properties" value="9" />
+          <entry key="xml" value="173" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="49" />
+          <entry key="HTML" value="136" />
+          <entry key="JAVA" value="852" />
+          <entry key="JavaScript" value="1630" />
           <entry key="Properties" value="9" />
+          <entry key="SQL" value="8" />
+          <entry key="XML" value="165" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/controller/BookController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/dao/BookDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-231">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BookDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-882" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/fangxiaofeng/dao/BookDaoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="72" column="35" lean-forward="true" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/dao/CategoryDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/dao/CustomerDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="277">
+              <caret line="290" column="49" selection-start-line="290" selection-start-column="20" selection-end-line="290" selection-end-column="49" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -131,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/model/Category.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+            <state relative-caret-position="208">
+              <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="31" />
               <folding>
                 <element signature="e#219#220#0" expanded="true" />
                 <element signature="e#252#253#0" expanded="true" />
@@ -148,10 +149,63 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/dao/CategoryDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="231">
+              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/controller/CategoryController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-46">
+              <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CategoryDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="609">
+              <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/fangxiaofeng/dao/CategoryDaoTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/service/CategoryService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="445">
+              <caret line="145" column="38" lean-forward="true" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
+              <folding>
+                <element signature="e#350#357#1" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -159,8 +213,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/model/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="140" column="5" lean-forward="true" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
+            <state relative-caret-position="420">
+              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="30" />
               <folding>
                 <element signature="e#2833#2834#0" expanded="true" />
                 <element signature="e#2864#2865#0" expanded="true" />
@@ -171,7 +225,39 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/controller/BookController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="524">
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1100#1116#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>robin</find>
+      <find>html</find>
+      <find>.html</find>
+      <find>#nav-biographic</find>
+      <find>nav-biographic</find>
+      <find>all</find>
+      <find>&lt;!-- Start Single Product --&gt;</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -183,6 +269,17 @@
         <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/fangxiaofeng/model/Category.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/fangxiaofeng/dao/BookDaoTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/BookDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fangxiaofeng/controller/CategoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fangxiaofeng/service/impl/CategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fangxiaofeng/service/CategoryService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/CategoryDao.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/fangxiaofeng/dao/CategoryDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fangxiaofeng/dao/CategoryDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fangxiaofeng/controller/BookController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/index.js" />
       </list>
     </option>
   </component>
@@ -192,9 +289,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="85" />
-    <option name="y" value="151" />
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="307" />
+    <option name="y" value="25" />
     <option name="width" value="1570" />
     <option name="height" value="1005" />
   </component>
@@ -311,6 +415,33 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatRobot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BookShop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatRobot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BookShop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="big-img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ChatRobot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BookShop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -347,18 +478,24 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="favico&#9;FILE&#9;file://E:/workSpaceIDEA/BookShop/src/main/webapp/images/favicon.ico" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553748584694" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553845813325" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workSpaceIDEA\BookShop\src\main\webapp\images\product\big-img" />
+      <recent name="E:\workSpaceIDEA\BookShop\src\main\webapp" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -384,6 +521,38 @@
       <option name="PACKAGE_NAME" value="com.fangxiaofeng.dao" />
       <option name="MAIN_CLASS_NAME" value="com.fangxiaofeng.dao.BookDaoTest" />
       <option name="METHOD_NAME" value="testSelectNewBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoryDaoTest.testFindCateByID" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookShop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fangxiaofeng.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fangxiaofeng.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.fangxiaofeng.dao.CategoryDaoTest" />
+      <option name="METHOD_NAME" value="testFindCateByID" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CategoryDaoTest.testFindCateByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="BookShop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fangxiaofeng.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fangxiaofeng.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.fangxiaofeng.dao.CategoryDaoTest" />
+      <option name="METHOD_NAME" value="testFindCateByName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -464,9 +633,13 @@
     <list>
       <item itemvalue="Tomcat Server.bookshop" />
       <item itemvalue="JUnit.BookDaoTest.testSelectNewBook" />
+      <item itemvalue="JUnit.CategoryDaoTest.testFindCateByID" />
+      <item itemvalue="JUnit.CategoryDaoTest.testFindCateByName" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CategoryDaoTest.testFindCateByName" />
+        <item itemvalue="JUnit.CategoryDaoTest.testFindCateByID" />
         <item itemvalue="JUnit.BookDaoTest.testSelectNewBook" />
       </list>
     </recent_temporary>
@@ -482,7 +655,8 @@
       <option name="presentableId" value="Default" />
       <updated>1553745178006</updated>
       <workItem from="1553745180466" duration="766000" />
-      <workItem from="1553747776303" duration="705000" />
+      <workItem from="1553747776303" duration="15078000" />
+      <workItem from="1553826243104" duration="13651000" />
     </task>
     <servers />
   </component>
@@ -499,26 +673,41 @@
     <history-entry file="BookDaoTest_testSelectNewBook - 2019.03.28 at 12h 44m 12s.xml">
       <configuration name="BookDaoTest.testSelectNewBook" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BookDaoTest_testSelectNewBook - 2019.03.28 at 12h 48m 33s.xml">
+      <configuration name="BookDaoTest.testSelectNewBook" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CategoryDaoTest_testFindCateByID - 2019.03.28 at 14h 31m 04s.xml">
+      <configuration name="CategoryDaoTest.testFindCateByID" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CategoryDaoTest_testFindCateByID - 2019.03.28 at 14h 32m 37s.xml">
+      <configuration name="CategoryDaoTest.testFindCateByID" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CategoryDaoTest_testFindCateByName - 2019.03.29 at 14h 28m 17s.xml">
+      <configuration name="CategoryDaoTest.testFindCateByName" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CategoryDaoTest_testFindCateByName - 2019.03.29 at 14h 29m 38s.xml">
+      <configuration name="CategoryDaoTest.testFindCateByName" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1471000" />
+    <option name="totallyTimeSpent" value="29495000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="307" y="25" width="1570" height="1005" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7107438" visible="true" weight="0.3178808" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32962137" />
+      <window_info id="Web" order="7" sideWeight="0.2892562" side_tool="true" visible="true" weight="0.3178808" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32962137" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25029516" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39905548" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -528,6 +717,8 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32962137" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32962137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -548,6 +739,18 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/controller/BookController.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/service/BookService.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -556,51 +759,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/controller/BookController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/dao/BookDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-231">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/model/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="140" column="5" lean-forward="true" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
-          <folding>
-            <element signature="e#2833#2834#0" expanded="true" />
-            <element signature="e#2864#2865#0" expanded="true" />
-            <element signature="e#2912#2913#0" expanded="true" />
-            <element signature="e#2952#2953#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BookDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-882" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/dao/CategoryDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/dao/CustomerDao.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -609,10 +776,103 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/plugins/fancybox.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/fangxiaofeng/dao/BookDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/books/1_1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/vendor/jquery-3.2.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="15415" selection-start-line="2" selection-start-column="15410" selection-end-line="2" selection-end-column="15415" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/books/1_2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/bg/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/best-sell-product/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/product/big-img/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/dao/BookDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/png-img/payment.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/png-img/shipping.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/product/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/images/png-img/headphone.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/BookDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/service/impl/BookServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/service/impl/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/model/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        <state relative-caret-position="208">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="31" />
           <folding>
             <element signature="e#219#220#0" expanded="true" />
             <element signature="e#252#253#0" expanded="true" />
@@ -626,15 +886,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/fangxiaofeng/dao/BookDaoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/fangxiaofeng/dao/CategoryDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="72" column="35" lean-forward="true" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
+        <state relative-caret-position="153">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/dao/CategoryDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/controller/CategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.5.RELEASE/spring-web-4.3.5.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/controller/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1100#1116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/CategoryDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="29" column="43" lean-forward="true" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="290" column="49" selection-start-line="290" selection-start-column="20" selection-end-line="290" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fangxiaofeng/model/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="30" />
+          <folding>
+            <element signature="e#2833#2834#0" expanded="true" />
+            <element signature="e#2864#2865#0" expanded="true" />
+            <element signature="e#2912#2913#0" expanded="true" />
+            <element signature="e#2952#2953#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="145" column="38" lean-forward="true" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
+          <folding>
+            <element signature="e#350#357#1" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#3;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#4;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

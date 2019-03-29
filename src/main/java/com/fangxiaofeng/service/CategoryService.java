@@ -14,10 +14,18 @@ public interface CategoryService {
     List<Category> findAllCategory() throws Exception;
 
     /**
-     * 通过名字查询ID
+     * 通过ID查询cate
      * @param categoryID
      * @return
      * @throws Exception
      */
     Category findCateByID(int categoryID) throws Exception;
+
+    /**
+     * 通过name来查cate
+     * @param categoryName
+     * @return
+     * @throws Exception
+     */
+    Category findCateByName(String categoryName) throws Exception;
 }
