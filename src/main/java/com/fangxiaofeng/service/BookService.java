@@ -30,4 +30,10 @@ public interface BookService {
     // 查询新上架书籍
     List<Book> selectNewBook(Category category);
 
+    // 分页查找书
+    List<Book> selectBookList(Category category,int rowIndex,int pageSize);
+
+    // 返回条数
+    int selectBookCount(@Param("category") Category category);
+
 }

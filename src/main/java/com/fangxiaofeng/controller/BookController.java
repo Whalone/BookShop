@@ -5,6 +5,7 @@ import com.fangxiaofeng.model.Category;
 import com.fangxiaofeng.service.BookService;
 import com.fangxiaofeng.service.CategoryService;
 
+import com.fangxiaofeng.util.PageCalculator;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -108,6 +109,29 @@ public class BookController {
         modelMap.put("book",book);
         modelMap.put("success",true);
         return modelMap;
+    }
+
+    @RequestMapping(value = "/selectBookList")
+    @ResponseBody
+    private Map<String,Object> selectBookList(HttpServletRequest request) throws Exception{
+        Map<String,Object> modelMap = new HashMap<>();
+        Category category = new Category();
+        String categoryName = request.getParameter("categoryName");
+        int pageSize = Integer.parseInt(request.getParameter("pageSize"));
+        int rowIndex = PageCalculator.calculateRowIndex(Integer.parseInt(request.getParameter("pageIndex")),pageSize);
+        if(StringUtils.isNotEmpty(categoryName)){
+            category = categoryService.findCateByName(categoryName);
+            List<Book> books = bookService.selectBookList(category,rowIndex,pageSize);
+            modelMap.put("books",books);
+            modelMap.put("success",true);
+        }else{
+            List<Book> books = bookService.selectBookList(category,rowIndex,pageSize);
+            modelMap.put("books",books);
+            modelMap.put("success",true);
+        }
+        return modelMap;
+
+
     }
 
 

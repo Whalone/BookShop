@@ -2,6 +2,7 @@ package com.fangxiaofeng.dao;
 
 import com.fangxiaofeng.model.Book;
 import com.fangxiaofeng.model.Category;
+import com.fangxiaofeng.util.PageCalculator;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -84,6 +85,22 @@ public class BookDaoTest {
         category.setCategoryID(11);
         books = bookDao.selectNewBook(category);
         System.out.println(books);
+    }
+
+    @Test
+    public void testSelectBookList(){
+        Category category = new Category();
+        /*int num = bookDao.selectBookCount(category);
+        System.out.println(num);*/
+        category.setCategoryID(11);
+        int num = bookDao.selectBookCount(category);
+        System.out.println(num);
+        int pageSize = 12;
+        int rowPage = 2;
+        int rowIndex = PageCalculator.calculateRowIndex(rowPage,12);
+        System.out.println(rowIndex);
+        List<Book> books = bookDao.selectBookList(category,rowIndex,pageSize);
+        System.out.println(books.size());
     }
 
 }

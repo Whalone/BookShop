@@ -80,4 +80,30 @@
         </where>
         ORDER BY createTime DESC
     </select>
+    
+    <select id="selectBookList" resultType="com.fangxiaofeng.model.Book">
+        SELECT
+          *
+        FROM
+          book
+        <if test="category.categoryID!=0">
+        WHERE
+          categoryID = #{category.categoryID}
+        </if>
+        ORDER BY
+          weight DESC
+        LIMIT #{rowIndex},#{pageSize};
+    </select>
+
+    <select id="selectBookCount" parameterType="com.fangxiaofeng.model.Category" resultType="INT">
+        SELECT
+          COUNT(*)
+        FROM
+          book
+        <if test="category.categoryID!=0">
+            WHERE
+            categoryID = #{category.categoryID}
+        </if>
+
+    </select>
 </mapper>

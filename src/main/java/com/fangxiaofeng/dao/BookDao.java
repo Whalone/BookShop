@@ -55,5 +55,20 @@ public interface BookDao {
      */
     List<Book> selectNewBook(Category category);
 
+    /**
+     * 分页查找书
+     * @param category
+     * @param rowIndex
+     * @param pageSize
+     * @return
+     */
+    List<Book> selectBookList(@Param("category") Category category,@Param("rowIndex")int rowIndex,@Param("pageSize")int pageSize);
+
+    /**
+     * 返回条数
+     * @return
+     */
+    int selectBookCount(@Param("category") Category category);
+
 
 }

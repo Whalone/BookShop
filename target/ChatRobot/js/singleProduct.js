@@ -4,6 +4,7 @@ $(function () {
     console.log(bookID);
 
     var url = 'book/selectBookByID?bookID='+bookID;
+
     $.getJSON(url,function (data) {
         if(data.success){
             var book = data.book;
@@ -13,16 +14,32 @@ $(function () {
             $('#wrapper > div.maincontent.bg--white.pt--80.pb--55 > div > div > div.col-lg-9.col-12 > div.wn__single__product > div > div:nth-child(2) > div > div:nth-child(6) > p > span').html(book.publishTime);
             $('#wrapper > div.maincontent.bg--white.pt--80.pb--55 > div > div > div.col-lg-9.col-12 > div.wn__single__product > div > div:nth-child(2) > div > div.product__overview > p').html(book.information);
 
-            $('#wrapper > div.maincontent.bg--white.pt--80.pb--55 > div > div > div.col-lg-9.col-12 > div.wn__single__product > div > div:nth-child(1) > div > div.fotorama.wn__fotorama__action.fotorama1554111116462 > div > div.fotorama__stage > div.fotorama__stage__shaft > div.fotorama__stage__frame.fotorama__loaded.fotorama__loaded--img.fotorama__active > img').attr('src',book.forthImage);
-            $('#wrapper > div.maincontent.bg--white.pt--80.pb--55 > div > div > div.col-lg-9.col-12 > div.wn__single__product > div > div:nth-child(1) > div > div.fotorama.wn__fotorama__action.fotorama1554111116462 > div > div.fotorama__stage.fotorama__pointer > div.fotorama__stage__shaft > div:nth-child(2) > img').attr('src',book.fifthImage);
-
-            $('#wrapper > div.maincontent.bg--white.pt--80.pb--55 > div > div > div.col-lg-9.col-12 > div.wn__single__product > div > div:nth-child(1) > div > div.fotorama.wn__fotorama__action.fotorama1554101839201 > div > div.fotorama__nav-wrap > div > div > div.fotorama__nav__frame.fotorama__nav__frame--thumb.fotorama__active > div > img').attr('src',book.forthImage);
-            $('#wrapper > div.maincontent.bg--white.pt--80.pb--55 > div > div > div.col-lg-9.col-12 > div.wn__single__product > div > div:nth-child(1) > div > div.fotorama.wn__fotorama__action.fotorama1554101839201 > div > div.fotorama__nav-wrap > div > div > div:nth-child(3) > div > img').attr('src',book.fifthImage);
-            $('#wrapper > div.maincontent.bg--white.pt--80.pb--55 > div > div > div.col-lg-9.col-12 > div.wn__single__product > div > div:nth-child(1) > div > div.fotorama.wn__fotorama__action.fotorama1554101839201 > div > div.fotorama__nav-wrap > div > div > div:nth-child(4) > div > img').attr('src',book.firstImage);
-            $('#wrapper > div.maincontent.bg--white.pt--80.pb--55 > div > div > div.col-lg-9.col-12 > div.wn__single__product > div > div:nth-child(1) > div > div.fotorama.wn__fotorama__action.fotorama1554101839201 > div > div.fotorama__nav-wrap > div > div > div:nth-child(5) > div > img').attr('src',book.secondImage);
-            $('#wrapper > div.maincontent.bg--white.pt--80.pb--55 > div > div > div.col-lg-9.col-12 > div.wn__single__product > div > div:nth-child(1) > div > div.fotorama.wn__fotorama__action.fotorama1554101839201 > div > div.fotorama__nav-wrap > div > div > div:nth-child(6) > div > img').attr('src',book.thirdImage);
+            $('#wrapper > div.maincontent.bg--white.pt--80.pb--55 > div > div > div.col-lg-9.col-12 > div.wn__single__product > div > div:nth-child(1) > div > div > a:nth-child(1) > img').attr('src',book.thirdImage);
+            $('#wrapper > div.maincontent.bg--white.pt--80.pb--55 > div > div > div.col-lg-9.col-12 > div.wn__single__product > div > div:nth-child(1) > div > div > a:nth-child(2) > img').attr('src',book.forthImage);
+            $('#wrapper > div.maincontent.bg--white.pt--80.pb--55 > div > div > div.col-lg-9.col-12 > div.wn__single__product > div > div:nth-child(1) > div > div > a:nth-child(3) > img').attr('src',book.firstImage);
+            $('#wrapper > div.maincontent.bg--white.pt--80.pb--55 > div > div > div.col-lg-9.col-12 > div.wn__single__product > div > div:nth-child(1) > div > div > a:nth-child(4) > img').attr('src',book.secondImage);
+            $('#wrapper > div.maincontent.bg--white.pt--80.pb--55 > div > div > div.col-lg-9.col-12 > div.wn__single__product > div > div:nth-child(1) > div > div > a:nth-child(5) > img').attr('src',book.fifthImage);
         }
     })
+
+    var script1 = document.createElement('script');
+    var script2 = document.createElement('script');
+    var script3 = document.createElement('script');
+    var script4 = document.createElement('script');
+    var script5 = document.createElement('script');
+
+    script1.src='js/vendor/modernizr-3.5.0.min.js';
+    script2.src='js/popper.min.js';
+    script3.src='js/bootstrap.min.js';
+    script4.src='js/plugins.js';
+    script5.src='js/active.js';
+
+
+    document.body.appendChild(script1);
+    document.body.appendChild(script2);
+    document.body.appendChild(script3);
+    document.body.appendChild(script4);
+    document.body.appendChild(script5);
 
 
 

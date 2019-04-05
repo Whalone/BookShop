@@ -4,6 +4,7 @@ import com.fangxiaofeng.dao.BookDao;
 import com.fangxiaofeng.model.Book;
 import com.fangxiaofeng.model.Category;
 import com.fangxiaofeng.service.BookService;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -52,6 +53,16 @@ public class BookServiceImpl implements BookService {
     @Override
     public List<Book> selectNewBook(Category category) {
         return bookDao.selectNewBook(category);
+    }
+
+    @Override
+    public List<Book> selectBookList(Category category,int rowIndex,int pageSize){
+        return bookDao.selectBookList(category,rowIndex,pageSize);
+    }
+
+    @Override
+    public int selectBookCount(@Param("category") Category category){
+        return bookDao.selectBookCount(category);
     }
 }
 
