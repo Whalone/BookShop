@@ -1,22 +1,23 @@
-package com.fangxiaofeng.dao;
+package com.fangxiaofeng.service;
 
 import com.fangxiaofeng.model.Customer;
-import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Service;
 
-public interface CustomerDao {
+
+public interface CustomerService {
 
     /**
      * 通过ID查找客户
      * @param customerID
      */
-    Customer findCustomerByID(@Param("customerID") int customerID);
+    Customer findCustomerByID(int customerID);
 
     /**
      * userName查找用户
      * @param userName
      * @return
      */
-    Customer findCustomerByName(@Param("userName") String userName);
+    Customer findCustomerByName(String userName);
 
     /**
      * 插入新的customer
@@ -29,4 +30,6 @@ public interface CustomerDao {
      * @param customer
      */
     void updateCustomer(Customer customer);
+
+
 }

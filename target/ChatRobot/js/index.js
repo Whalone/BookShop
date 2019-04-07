@@ -10,6 +10,8 @@ $(function () {
     selectAllProduct('cook');*/
     selectBestSaler();
 
+    getCustomerInfo();
+
 
 
     function selectNewBook() {
@@ -227,6 +229,24 @@ $(function () {
     }
 
 
-
+    function getCustomerInfo() {
+        var url = 'customer/getCustomerInfo';
+        var customer;
+        var cusMenuHtml='';
+        $.getJSON(url,function (data) {
+            if(data.success){
+                customer = data.customer;
+                cusMenuHtml = ''+
+                    '<span><a href="#" style="color: black">Compare Product</a></span>\n' +
+                    '<span><a href="#" style="color: black">My Account</a></span>\n' +
+                    '<span><a href="#" style="color: black">My Wishlist</a></span>';
+            }else{
+                cusMenuHtml = ''+
+                    '<span><a href="login.html">Sign In</a></span>\n' +
+                    '<span><a href="#">Create An Account</a></span>'
+            }
+            $('#wn__header > div > div:nth-child(1) > div:nth-child(3) > ul > li.setting__bar__icon > div > div > div:nth-child(4) > div > div > div').html(cusMenuHtml);
+        })
+    }
 
 })

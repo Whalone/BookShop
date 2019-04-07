@@ -12,6 +12,15 @@
           customerID = #{customerID}
     </select>
 
+    <select id="findCustomerByName" parameterType="String" resultType="com.fangxiaofeng.model.Customer">
+        SELECT
+          *
+        FROM customer
+        WHERE
+          userName = #{userName}
+
+    </select>
+
     <insert id="insertNewCustomer" parameterType="com.fangxiaofeng.model.Customer">
       INSERT
           INTO
@@ -27,17 +36,13 @@
         UPDATE
           customer
         SET
+          userName = #{userName},
+          password = #{password},
           nickName = #{nickName},
-          realName = #{realName},
           age = #{age},
           sex = #{sex},
           phone = #{phone},
-          password = #{password},
-          email = #{email},
-          image = #{image},
-          createTime = #{createTime},
-          modifyTime = #{modifyTime},
-          flag = #{flag}
+          email = #{email}
         WHERE
           customerID = #{customerID}
     </update>

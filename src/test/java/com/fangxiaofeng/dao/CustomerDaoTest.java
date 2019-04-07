@@ -22,7 +22,6 @@ public class CustomerDaoTest {
     public void testinsertNewCustomer(){
         Customer customer = new Customer();
         customer.setNickName("test");
-        customer.setRealName("test");
         customer.setAge(18);
         customerDao.insertNewCustomer(customer);
     }
@@ -38,6 +37,13 @@ public class CustomerDaoTest {
         Customer customer = customerDao.findCustomerByID(2);
         customer.setNickName("Tommy");
         customerDao.updateCustomer(customer);
+    }
+
+    @Test
+    public void testFindCustomerByName(){
+        String userName = "admin1";
+        Customer customer = customerDao.findCustomerByName(userName);
+        System.out.println(customer);
     }
 }
 
