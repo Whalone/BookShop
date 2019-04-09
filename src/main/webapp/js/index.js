@@ -1,6 +1,9 @@
 $(function () {
 
     var quickViewList = new Array();
+    var customer = {};
+    var num = 0; //购物车item数目
+    var priceSum = 0; //购物车item总价
     selectNewBook();
     selectAllCategory();
     selectAllProduct();
@@ -11,6 +14,13 @@ $(function () {
     selectBestSaler();
 
     getCustomerInfo();
+
+    getCartInfo(1);
+
+    addCart(11,3);
+
+
+
 
 
 
@@ -231,7 +241,6 @@ $(function () {
 
     function getCustomerInfo() {
         var url = 'customer/getCustomerInfo';
-        var customer;
         var cusMenuHtml='';
         $.getJSON(url,function (data) {
             if(data.success){
@@ -248,5 +257,108 @@ $(function () {
             $('#wn__header > div > div:nth-child(1) > div:nth-child(3) > ul > li.setting__bar__icon > div > div > div:nth-child(4) > div > div > div').html(cusMenuHtml);
         })
     }
+
+    function  getCartInfo(customerID) {
+        var url = 'cart/findOrderByCusID';
+
+        $.ajax({
+            url:url,
+            type:'POST',
+            data:{
+                customerID : customerID
+            },
+            dataType:'json',
+            success:function (data) {
+                if(data.success){
+                    var carts = data.carts;
+                    num = carts.length;
+                    var itemsHtml = '';
+                    carts.map(function (cart, index) {
+                        itemsHtml += ''+
+                            '<div class="item01 d-flex mt--20">\n' +
+                            '\t\t<div class="thumb">\n' +
+                            '\t\t\t\t<a href="single-product.html"><img src="'+cart.book.fifthImage+'" alt="product images"></a>\n' +
+                            '\t\t</div>\n' +
+                            '\t\t<div class="content">\n' +
+                            '\t\t\t\t<h6><a href="single-product.html">'+cart.book.bookName+'</a></h6>\n' +
+                            '\t\t\t\t<span class="prize">$'+cart.book.price+'.00</span>\n' +
+                            '\t\t\t\t<div class="product_prize d-flex justify-content-between">\n' +
+                            '\t\t\t\t\t\t<span class="qun">Qty: '+cart.quantity+'</span>\n' +
+                            '\t\t\t\t\t\t<ul class="d-flex justify-content-end">\n' +
+                            '\t\t\t\t\t\t\t\t<li><a href="#"><i class="zmdi zmdi-settings"></i></a></li>\n' +
+                            '\t\t\t\t\t\t\t\t<li><a href="#"><i class="zmdi zmdi-delete"></i></a></li>\n' +
+                            '\t\t\t\t\t\t</ul>\n' +
+                            '\t\t\t\t</div>\n' +
+                            '\t\t</div>\n' +
+                            '</div>';
+                            priceSum += cart.book.price;
+                    });
+                    $('#wn__header > div > div:nth-child(1) > div:nth-child(3) > ul > li.shopcart > div > div > div.single__items > div').html(itemsHtml);
+                    $('#wn__header > div > div:nth-child(1) > div:nth-child(3) > ul > li.shopcart > div > div > div.items-total.d-flex.justify-content-between > span:nth-child(1)').html(num+' items');
+                    $('#wn__header > div > div:nth-child(1) > div:nth-child(3) > ul > li.shopcart > div > div > div.total_amount.text-right > span').html('$'+priceSum+'.00');
+                }else{
+
+                    console.log('1111');
+                }
+            }
+
+        });
+    }
+
+    function addCart(bookID,quantity) {
+        if(customer=null){
+            window.location.href='login.html';
+        }
+        var url = 'cart/addCartItem';
+        $.ajax({
+            url:url,
+            type:'POST',
+            data:{
+                bookID : bookID,
+                quantity : quantity
+            },
+            dataType:'json',
+            success:function (data) {
+                if(data.success){
+                    addCartHtml(bookID,quantity);
+                    alert('Add to shopping cart successfully!');
+                }else{
+                    alert('Something wrong with shopping cart! Try again!');
+                }
+            }
+        })
+
+    }
+
+    function addCartHtml(bookID,quantity) {
+        var url='book/selectBookByID?bookID='+bookID;
+        var itemHtml='';
+        $.getJSON(url,function (data) {
+            if(data.success){
+                var book = data.book;
+                itemHtml = ''+
+                    '<div class="item01 d-flex mt--20">\n' +
+                    '\t\t<div class="thumb">\n' +
+                    '\t\t\t\t<a href="single-product.html"><img src="'+book.fifthImage+'" alt="product images"></a>\n' +
+                    '\t\t</div>\n' +
+                    '\t\t<div class="content">\n' +
+                    '\t\t\t\t<h6><a href="single-product.html">'+book.bookName+'</a></h6>\n' +
+                    '\t\t\t\t<span class="prize">$'+book.price+'.00</span>\n' +
+                    '\t\t\t\t<div class="product_prize d-flex justify-content-between">\n' +
+                    '\t\t\t\t\t\t<span class="qun">Qty: '+quantity+'</span>\n' +
+                    '\t\t\t\t\t\t<ul class="d-flex justify-content-end">\n' +
+                    '\t\t\t\t\t\t\t\t<li><a href="#"><i class="zmdi zmdi-settings"></i></a></li>\n' +
+                    '\t\t\t\t\t\t\t\t<li><a href="#"><i class="zmdi zmdi-delete"></i></a></li>\n' +
+                    '\t\t\t\t\t\t</ul>\n' +
+                    '\t\t\t\t</div>\n' +
+                    '\t\t</div>\n' +
+                    '</div>';
+                $('#wn__header > div > div:nth-child(1) > div:nth-child(3) > ul > li.shopcart > div > div > div.single__items > div').append(itemHtml);
+                $('#wn__header > div > div:nth-child(1) > div:nth-child(3) > ul > li.shopcart > div > div > div.items-total.d-flex.justify-content-between > span:nth-child(1)').html((num++)+' items');
+                $('#wn__header > div > div:nth-child(1) > div:nth-child(3) > ul > li.shopcart > div > div > div.total_amount.text-right > span').html('$'+(priceSum+book.price)+'.00');
+            }
+        })
+    }
+
 
 })

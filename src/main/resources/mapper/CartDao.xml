@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fangxiaofeng.dao.CartDao">
+    <resultMap id="orderMap" type="com.fangxiaofeng.model.Cart">
+        <id column="orderID" property="orderID"/>
+        <result column="createTime" property="createTime"/>
+        <result column="quantity" property="quantity"/>
+        <result column="flag" property="flag"/>
+        <association property="book" column="bookID" javaType="com.fangxiaofeng.model.Book">
+            <id column="bookID" property="bookID"/>
+            <result column="categoryID" property="categoryID"/>
+            <result column="bookName" property="bookName"/>
+            <result column="price" property="price"/>
+            <result column="author" property="author"/>
+            <result column="fifthImage" property="fifthImage"/>
+        </association>
+        <association property="customer" column="customerID" javaType="com.fangxiaofeng.model.Customer">
+            <id column="customerID" property="customerID"/>
+            <result column="userName" property="userName"/>
+        </association>
+    </resultMap>
+    
+    
+    <select id="findOrderByCusID" resultMap="orderMap" parameterType="int">
+        SELECT
+          c.orderID,
+          c.createTime,
+          c.quantity,
+          c.flag,
+          b.bookID,
+          b.categoryID,
+          b.bookName,
+          b.price,
+          b.author,
+          b.fifthImage,
+          ct.customerID,
+          ct.userName
+        FROM
+          cart c,
+          book b,
+          customer ct
+        WHERE
+          c.bookID = b.bookID
+        AND
+          c.customerID = ct.customerID
+        AND
+          c.customerID = #{customerID}
+    </select>
+
+    <update id="payOrder" parameterType="int">
+        UPDATE
+          cart
+        SET
+          flag = 1
+        WHERE
+          customerID = #{customerID}
+    </update>
+
+    <insert id="addCartItem" parameterType="com.fangxiaofeng.model.Cart">
+        INSERT INTO
+          cart(bookID,customerID,createTime,quantity)
+        VALUES
+          (#{cart.book.bookID},#{cart.customer.customerID},#{cart.createTime},#{cart.quantity})
+    </insert>
+
+
+</mapper>
